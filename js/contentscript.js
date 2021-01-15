@@ -13,6 +13,7 @@ torpedo.progUrl = false;
 torpedo.hasTooltip = false;
 
 $(document).ready(function () {
+  console.log(`content script started`);
   chrome.runtime.sendMessage({ name: "TLD" }, function (r) {
     torpedo.publicSuffixList.parse(r, punycode.toASCII);
   });

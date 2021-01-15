@@ -14,6 +14,10 @@
     "scripts": ["js/jquery-3.4.1.min.js", "js/punycode.min.js", "background.js"]
   },
   "permissions": ["<all_urls>", "tabs", "storage"],
+  "page_action": {
+    "default_title": "__MSG_extensionName__",
+    "default_popup": "icon.html"
+  },
   "options_ui": {
     "page": "options.html"
   },
@@ -25,7 +29,20 @@
   "content_scripts": [
     {
       "matches": [
-        "<all_urls>"
+        "https://mg.mail.yahoo.com/*",
+        "https://mail.yahoo.com/*",
+        "https://email.t-online.de/*",
+        "https://outlook.live.com/*",
+        "https://mail.aol.com/*",
+        "https://navigator.web.de/*",
+        "https://bap.navigator.web.de/*",
+        "https://3c-bap.web.de/*",
+        "https://3c.web.de/*",
+        "https://bap.navigator.gmx.net/*",
+        "https://navigator.gmx.net/*",
+        "https://3c.gmx.net/*",
+        "https://3c-bap.gmx.net/*",
+        "https://mail.google.com/*"
       ],
       "css": ["css/jquery.qtip.min.css", "css/tooltip.css"],
       "js": [

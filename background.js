@@ -505,7 +505,14 @@ function readInBlacklist() {
                           dangerousDomains.push(domainWithoutSpaces);
                         }
                       }
-                      // Save dangerousDomains and timestamp of current version of the CTC blacklist in chrome local storage
+                      // console.log(
+                      //   `length: ${dangerousDomains.length};\nfirstEntry: ${
+                      //     dangerousDomains[0]
+                      //   };\nlastEntry: ${
+                      //     dangerousDomains[dangerousDomains.length - 1]
+                      //   };`
+                      // );
+                      // // Save dangerousDomains and timestamp of current version of the CTC blacklist in chrome local storage
                       chrome.storage.local.set({
                         currentCtcBlacklistVersion: currentCtcBlacklistVersion,
                         dangerousDomains: dangerousDomains,
@@ -521,6 +528,7 @@ function readInBlacklist() {
       );
     }
   });
+  console.log("Reading in blacklist done.");
 }
 
 function showTutorial() {

@@ -74,9 +74,9 @@ function init() {
   );
 
   // page 2
-  $("#torpedo-guide-basic-welcome-title").html(
-    chrome.i18n.getMessage("guide_welcome_title")
-  );
+  // $("#torpedo-guide-basic-welcome-title").html(
+  //   chrome.i18n.getMessage("guide_welcome_title")
+  // );
   $("#torpedo-guide-basic-welcome-intro1").html(
     chrome.i18n.getMessage("guide_welcome_intro1")
   );
@@ -85,9 +85,9 @@ function init() {
   );
 
   // page 3
-  $("#torpedo-guide-basic-why-title").html(
-    chrome.i18n.getMessage("guide_why_title")
-  );
+  // $("#torpedo-guide-basic-why-title").html(
+  //   chrome.i18n.getMessage("guide_why_title")
+  // );
   $("#torpedo-guide-basic-why-description1").html(
     chrome.i18n.getMessage("guide_why_description")
   );
@@ -103,9 +103,9 @@ function init() {
   $("#torpedo-guide-basic-why-usage-title").html(
     chrome.i18n.getMessage("guide_tooltips_case4")
   );
-  $("#torpedo-guide-basic-why-usage-list").html(
-    chrome.i18n.getMessage("guide_why_usage_list")
-  );
+  // $("#torpedo-guide-basic-why-usage-list").html(
+  //   chrome.i18n.getMessage("guide_why_usage_list")
+  // );
 
   // page 4
   $("#torpedo_guide_settings_description1").html(
